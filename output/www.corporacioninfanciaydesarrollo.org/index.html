@@ -299,33 +299,6 @@ html {
 }
 </style>
 
-<style id="static-gallery-fix">
-/* Elementor Gallery - Static Fix: show data-thumbnail as background */
-.e-gallery-image[data-thumbnail] {
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-}
-.e-gallery-container {
-  position: relative;
-  width: 100%;
-}
-.e-gallery-item {
-  display: inline-block;
-  position: absolute;
-  width: calc(var(--item-width) * (100% - var(--gap-count) * var(--hgap, 50px)));
-  height: var(--item-height);
-  left: calc(var(--item-start) * (100% - var(--gap-count) * var(--hgap, 50px)) + var(--item-row-index) * var(--hgap, 50px));
-  top: var(--item-top);
-}
-.e-gallery-container.e-gallery-justified {
-  padding-bottom: calc(var(--container-aspect-ratio) * 100%);
-}
-.e-gallery-image {
-  width: 100%;
-  height: 100%;
-}
-</style>
 </head>
 <body class="home wp-singular page-template page-template-elementor_theme page page-id-2 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-kit-6 elementor-page elementor-page-2 e--ua-isTouchDevice e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="desktop">
 
@@ -1154,51 +1127,22 @@ html {
 		<div class="elementor-element elementor-element-252621b e-con-full e-flex e-con e-child" data-id="252621b" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-a40894f elementor-widget elementor-widget-gallery" data-id="a40894f" data-element_type="widget" data-e-type="widget" data-settings="{&quot;gallery_layout&quot;:&quot;justified&quot;,&quot;ideal_row_height&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:70,&quot;sizes&quot;:[]},&quot;gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;ideal_row_height_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:35,&quot;sizes&quot;:[]},&quot;ideal_row_height_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:60,&quot;sizes&quot;:[]},&quot;gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;link_to&quot;:&quot;custom&quot;,&quot;lazyload&quot;:&quot;yes&quot;,&quot;gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;url&quot;:{&quot;url&quot;:&quot;https:\/\/www.corporacioninfanciaydesarrollo.org\/nuestros-aliados\/&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;,&quot;custom_attributes&quot;:&quot;&quot;},&quot;content_hover_animation&quot;:&quot;fade-in&quot;}" data-widget_type="gallery.default">
 				<div class="elementor-widget-container">
-							<div class="elementor-gallery__container e-gallery-container e-gallery-justified e-gallery--ltr e-gallery--lazyload" style="--hgap: 50px; --vgap: 50px; --animation-duration: 350ms; --container-aspect-ratio: 0.12955869578811993;">
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content e-gallery-first-row-item" href="./nuestros-aliados/index.html" style="--item-width: 0.24862313139260425; --gap-count: 5; --item-height: 33.62830867395407%; --item-start: 0; --item-row-index: 0; --item-top: 0%; --row: 0;">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="./wp-content/uploads/2025/05/apoyar-8-aliados-768x170.png" data-width="768" data-height="170" aria-label="" role="img"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./nuestros-aliados/index.html" style="--item-width: 0.044059795436664044; --gap-count: 5; --item-height: 33.62830867395407%; --item-start: 0.24862313139260425; --item-row-index: 1; --item-top: 0%; --row: 0;">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="./wp-content/uploads/2025/05/bienestar-familiar-9-aliados.png" data-width="161" data-height="200" aria-label="" role="img"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./nuestros-aliados/index.html" style="--item-width: 0.27852084972462626; --gap-count: 5; --item-height: 33.62830867395407%; --item-start: 0.2926829268292683; --item-row-index: 2; --item-top: 0%; --row: 0;">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="./wp-content/uploads/2025/05/bogota-secretaria-edu-alcald-3-aliados-768x152.png" data-width="768" data-height="152" aria-label="" role="img"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./nuestros-aliados/index.html" style="--item-width: 0.1848937844217152; --gap-count: 5; --item-height: 33.62830867395407%; --item-start: 0.5712037765538945; --item-row-index: 3; --item-top: 0%; --row: 0;">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="./wp-content/uploads/2025/05/diakonie-6-aliados.png" data-width="670" data-height="200" aria-label="" role="img"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./nuestros-aliados/index.html" style="--item-width: 0.06923682140047208; --gap-count: 5; --item-height: 33.62830867395407%; --item-start: 0.7560975609756098; --item-row-index: 4; --item-top: 0%; --row: 0;">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="./wp-content/uploads/2025/05/fundacion-tierra-paz-2-aliados.png" data-width="251" data-height="200" aria-label="" role="img"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./nuestros-aliados/index.html" style="--item-width: 0.17466561762391816; --gap-count: 5; --item-height: 33.62830867395407%; --item-start: 0.8253343823760818; --item-row-index: 5; --item-top: 0%; --row: 0;">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="./wp-content/uploads/2025/05/kobo12-aliados.png" data-width="634" data-height="200" aria-label="" role="img"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content e-gallery-first-row-item" href="./nuestros-aliados/index.html" style="--item-width: 0.26118067978533094; --gap-count: 7; --item-height: 34.21123585587953%; --item-start: 0; --item-row-index: 0; --item-top: 33.62830867395407%; --row: 1;">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="./wp-content/uploads/2025/05/nrc-7-aliados-768x184.png" data-width="768" data-height="184" aria-label="" role="img"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./nuestros-aliados/index.html" style="--item-width: 0.19320214669051877; --gap-count: 7; --item-height: 34.21123585587953%; --item-start: 0.26118067978533094; --item-row-index: 1; --item-top: 33.62830867395407%; --row: 1;">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="./wp-content/uploads/2025/05/opcion-legal-5-aliados.png" data-width="616" data-height="200" aria-label="" role="img"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./nuestros-aliados/index.html" style="--item-width: 0.13327370304114491; --gap-count: 7; --item-height: 34.21123585587953%; --item-start: 0.4543828264758497; --item-row-index: 2; --item-top: 33.62830867395407%; --row: 1;">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="./wp-content/uploads/2025/05/plan-international-4-aliados.png" data-width="425" data-height="200" aria-label="" role="img"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./nuestros-aliados/index.html" style="--item-width: 0.13506261180679785; --gap-count: 7; --item-height: 34.21123585587953%; --item-start: 0.5876565295169947; --item-row-index: 3; --item-top: 33.62830867395407%; --row: 1;">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="./wp-content/uploads/2025/05/Poject-hope-13-aliados.png" data-width="430" data-height="200" aria-label="" role="img"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./nuestros-aliados/index.html" style="--item-width: 0.04740608228980322; --gap-count: 7; --item-height: 34.21123585587953%; --item-start: 0.7227191413237926; --item-row-index: 4; --item-top: 33.62830867395407%; --row: 1;">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="./wp-content/uploads/2025/05/rescue-10-aliados.png" data-width="150" data-height="200" aria-label="" role="img"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./nuestros-aliados/index.html" style="--item-width: 0.052772808586762074; --gap-count: 7; --item-height: 34.21123585587953%; --item-start: 0.7701252236135958; --item-row-index: 5; --item-top: 33.62830867395407%; --row: 1;">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="./wp-content/uploads/2025/05/salud-11-aliados.png" data-width="169" data-height="200" aria-label="" role="img"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./nuestros-aliados/index.html" style="--item-width: 0.12164579606440072; --gap-count: 7; --item-height: 34.21123585587953%; --item-start: 0.8228980322003578; --item-row-index: 6; --item-top: 33.62830867395407%; --row: 1;">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="./wp-content/uploads/2025/05/unicef-1-aliados.png" data-width="388" data-height="200" aria-label="" role="img"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./nuestros-aliados/index.html" style="--item-width: 0.055456171735241505; --gap-count: 7; --item-height: 34.21123585587953%; --item-start: 0.9445438282647586; --item-row-index: 7; --item-top: 33.62830867395407%; --row: 1;">
-					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="./wp-content/uploads/2025/05/union-europea-aliados.png" data-width="178" data-height="200" aria-label="" role="img"></div>
-														</a>
-					</div>
-					</div>
+							<div class="static-gallery-grid" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 30px 40px; padding: 20px 0;">
+  <a href="./nuestros-aliados/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2025/05/apoyar-8-aliados-768x170.png" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./nuestros-aliados/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2025/05/bienestar-familiar-9-aliados.png" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./nuestros-aliados/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2025/05/bogota-secretaria-edu-alcald-3-aliados-768x152.png" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./nuestros-aliados/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2025/05/diakonie-6-aliados.png" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./nuestros-aliados/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2025/05/fundacion-tierra-paz-2-aliados.png" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./nuestros-aliados/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2025/05/kobo12-aliados.png" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./nuestros-aliados/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2025/05/nrc-7-aliados-768x184.png" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./nuestros-aliados/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2025/05/opcion-legal-5-aliados.png" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./nuestros-aliados/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2025/05/plan-international-4-aliados.png" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./nuestros-aliados/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2025/05/Poject-hope-13-aliados.png" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./nuestros-aliados/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2025/05/rescue-10-aliados.png" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./nuestros-aliados/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2025/05/salud-11-aliados.png" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./nuestros-aliados/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2025/05/unicef-1-aliados.png" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./nuestros-aliados/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2025/05/union-europea-aliados.png" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+</div></div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-f8cde21 e-con-full e-flex e-con e-child animated fadeInLeft" data-id="f8cde21" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;,&quot;animation_delay&quot;:500}">
@@ -1298,33 +1242,16 @@ html {
 		<div class="elementor-element elementor-element-ef8bebd e-con-full e-flex e-con e-parent e-lazyloaded" data-id="ef8bebd" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-2d75b07 elementor-widget elementor-widget-gallery" data-id="2d75b07" data-element_type="widget" data-e-type="widget" data-settings="{&quot;gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;link_to&quot;:&quot;custom&quot;,&quot;url&quot;:{&quot;url&quot;:&quot;https:\/\/www.corporacioninfanciaydesarrollo.org\/galeria\/&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;,&quot;custom_attributes&quot;:&quot;&quot;},&quot;aspect_ratio&quot;:&quot;1:1&quot;,&quot;columns_tablet&quot;:4,&quot;columns_mobile&quot;:2,&quot;gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;lazyload&quot;:&quot;yes&quot;,&quot;gallery_layout&quot;:&quot;grid&quot;,&quot;columns&quot;:4,&quot;content_hover_animation&quot;:&quot;fade-in&quot;}" data-widget_type="gallery.default">
 				<div class="elementor-widget-container">
-							<div class="elementor-gallery__container e-gallery-container e-gallery-grid e-gallery--ltr e-gallery--lazyload" style="--hgap: 0px; --vgap: 0px; --animation-duration: 350ms; --columns: 4; --rows: 2; --aspect-ratio: 100%; --container-aspect-ratio: 50%;">
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./galeria/index.html" style="--column: 0; --row: 0;">
-					<div class="e-gallery-image elementor-gallery-item__image e-gallery-image-loaded" data-thumbnail="./wp-content/uploads/2026/02/IMG-20251016-WA0076-Esta-768x534.jpg" data-width="768" data-height="534" aria-label="" role="img" style="background-image: url(&quot;./wp-content/uploads/2026/02/IMG-20251016-WA0076-Esta-768x534.jpg&quot;);"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./galeria/index.html" style="--column: 1; --row: 0;">
-					<div class="e-gallery-image elementor-gallery-item__image e-gallery-image-loaded" data-thumbnail="./wp-content/uploads/2026/02/WhatsApp-Image-2025-11-13-at-11.23.59-AM-2-Esta-768x576.jpeg" data-width="768" data-height="576" aria-label="" role="img" style="background-image: url(&quot;./wp-content/uploads/2026/02/WhatsApp-Image-2025-11-13-at-11.23.59-AM-2-Esta-768x576.jpeg&quot;);"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./galeria/index.html" style="--column: 2; --row: 0;">
-					<div class="e-gallery-image elementor-gallery-item__image e-gallery-image-loaded" data-thumbnail="./wp-content/uploads/2026/02/IMG_20251105_075740_600-Esta-768x497.jpg" data-width="768" data-height="497" aria-label="" role="img" style="background-image: url(&quot;./wp-content/uploads/2026/02/IMG_20251105_075740_600-Esta-768x497.jpg&quot;);"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./galeria/index.html" style="--column: 3; --row: 0;">
-					<div class="e-gallery-image elementor-gallery-item__image e-gallery-image-loaded" data-thumbnail="./wp-content/uploads/2026/02/Taller-familias-Esta-768x475.jpg" data-width="768" data-height="475" aria-label="" role="img" style="background-image: url(&quot;./wp-content/uploads/2026/02/Taller-familias-Esta-768x475.jpg&quot;);"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./galeria/index.html" style="--column: 0; --row: 1;">
-					<div class="e-gallery-image elementor-gallery-item__image e-gallery-image-loaded" data-thumbnail="./wp-content/uploads/2026/02/Actividad_Entrega-de-Kis_-Gestion-Digna-de-la-Menstruacion-Esta-768x533.jpeg" data-width="768" data-height="533" aria-label="" role="img" style="background-image: url(&quot;./wp-content/uploads/2026/02/Actividad_Entrega-de-Kis_-Gestion-Digna-de-la-Menstruacion-Esta-768x533.jpeg&quot;);"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./galeria/index.html" style="--column: 1; --row: 1;">
-					<div class="e-gallery-image elementor-gallery-item__image e-gallery-image-loaded" data-thumbnail="./wp-content/uploads/2026/02/20-05-2025-Esta-768x576.jpg" data-width="768" data-height="576" aria-label="" role="img" style="background-image: url(&quot;./wp-content/uploads/2026/02/20-05-2025-Esta-768x576.jpg&quot;);"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./galeria/index.html" style="--column: 2; --row: 1;">
-					<div class="e-gallery-image elementor-gallery-item__image e-gallery-image-loaded" data-thumbnail="./wp-content/uploads/2026/02/LACID_R1A6_Caqueta_19-10-20252-Esta-768x565.jpeg" data-width="768" data-height="565" aria-label="" role="img" style="background-image: url(&quot;./wp-content/uploads/2026/02/LACID_R1A6_Caqueta_19-10-20252-Esta-768x565.jpeg&quot;);"></div>
-														</a>
-							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="./galeria/index.html" style="--column: 3; --row: 1;">
-					<div class="e-gallery-image elementor-gallery-item__image e-gallery-image-loaded" data-thumbnail="./wp-content/uploads/2026/02/Implementacion-ATAL1-Esta-768x525.jpg" data-width="768" data-height="525" aria-label="" role="img" style="background-image: url(&quot;./wp-content/uploads/2026/02/Implementacion-ATAL1-Esta-768x525.jpg&quot;);"></div>
-														</a>
-					</div>
-					</div>
+							<div class="static-gallery-grid" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 30px 40px; padding: 20px 0;">
+  <a href="./galeria/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2026/02/IMG-20251016-WA0076-Esta-768x534.jpg" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./galeria/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2026/02/WhatsApp-Image-2025-11-13-at-11.23.59-AM-2-Esta-768x576.jpeg" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./galeria/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2026/02/IMG_20251105_075740_600-Esta-768x497.jpg" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./galeria/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2026/02/Taller-familias-Esta-768x475.jpg" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./galeria/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2026/02/Actividad_Entrega-de-Kis_-Gestion-Digna-de-la-Menstruacion-Esta-768x533.jpeg" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./galeria/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2026/02/20-05-2025-Esta-768x576.jpg" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./galeria/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2026/02/LACID_R1A6_Caqueta_19-10-20252-Esta-768x565.jpeg" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+  <a href="./galeria/index.html" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; max-width: 180px; height: 70px;"><img src="./wp-content/uploads/2026/02/Implementacion-ATAL1-Esta-768x525.jpg" alt="" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy"></a>
+</div></div>
 				</div>
 				</div>
 				</div>
@@ -1778,35 +1705,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-<script id="static-gallery-fix-js">
-(function() {
-  document.addEventListener('DOMContentLoaded', function() {
-    // Set background-image from data-thumbnail for all gallery images
-    var galleryImages = document.querySelectorAll('.e-gallery-image[data-thumbnail]');
-    galleryImages.forEach(function(img) {
-      var src = img.getAttribute('data-thumbnail');
-      if (src) {
-        img.style.backgroundImage = 'url(' + src + ')';
-      }
-    });
-    
-    // Also handle any data-src or data-bg lazy-loaded images
-    var lazySrc = document.querySelectorAll('[data-src]:not([src])');
-    lazySrc.forEach(function(el) {
-      var src = el.getAttribute('data-src');
-      if (src && el.tagName === 'IMG') {
-        el.src = src;
-      }
-    });
-    
-    var lazyBg = document.querySelectorAll('[data-bg]');
-    lazyBg.forEach(function(el) {
-      var bg = el.getAttribute('data-bg');
-      if (bg && !el.style.backgroundImage) {
-        el.style.backgroundImage = 'url(' + bg + ')';
-      }
-    });
-  });
-})();
-</script>
 </body></html>
