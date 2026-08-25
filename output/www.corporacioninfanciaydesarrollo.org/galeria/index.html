@@ -294,6 +294,34 @@ html {
   visibility: visible !important;
 }
 </style>
+
+<style id="static-gallery-fix">
+/* Elementor Gallery - Static Fix: show data-thumbnail as background */
+.e-gallery-image[data-thumbnail] {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.e-gallery-container {
+  position: relative;
+  width: 100%;
+}
+.e-gallery-item {
+  display: inline-block;
+  position: absolute;
+  width: calc(var(--item-width) * (100% - var(--gap-count) * var(--hgap, 50px)));
+  height: var(--item-height);
+  left: calc(var(--item-start) * (100% - var(--gap-count) * var(--hgap, 50px)) + var(--item-row-index) * var(--hgap, 50px));
+  top: var(--item-top);
+}
+.e-gallery-container.e-gallery-justified {
+  padding-bottom: calc(var(--container-aspect-ratio) * 100%);
+}
+.e-gallery-image {
+  width: 100%;
+  height: 100%;
+}
+</style>
 </head>
 <body class="wp-singular page-template page-template-elementor_theme page page-id-549 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-kit-6 elementor-page elementor-page-549 e--ua-isTouchDevice e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="desktop">
 
@@ -1085,5 +1113,37 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+</script>
+
+<script id="static-gallery-fix-js">
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    // Set background-image from data-thumbnail for all gallery images
+    var galleryImages = document.querySelectorAll('.e-gallery-image[data-thumbnail]');
+    galleryImages.forEach(function(img) {
+      var src = img.getAttribute('data-thumbnail');
+      if (src) {
+        img.style.backgroundImage = 'url(' + src + ')';
+      }
+    });
+    
+    // Also handle any data-src or data-bg lazy-loaded images
+    var lazySrc = document.querySelectorAll('[data-src]:not([src])');
+    lazySrc.forEach(function(el) {
+      var src = el.getAttribute('data-src');
+      if (src && el.tagName === 'IMG') {
+        el.src = src;
+      }
+    });
+    
+    var lazyBg = document.querySelectorAll('[data-bg]');
+    lazyBg.forEach(function(el) {
+      var bg = el.getAttribute('data-bg');
+      if (bg && !el.style.backgroundImage) {
+        el.style.backgroundImage = 'url(' + bg + ')';
+      }
+    });
+  });
+})();
 </script>
 </body></html>
