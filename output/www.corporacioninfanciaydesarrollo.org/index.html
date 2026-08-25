@@ -299,6 +299,24 @@ html {
 }
 </style>
 
+
+<!-- hotspot-hover-css-fix -->
+<style>
+/* Ensure tooltips start hidden and animate in on hover */
+.e-hotspot .e-hotspot__direction-mask .e-hotspot--slide-direction {
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.e-hotspot.e-hotspot--active .e-hotspot__direction-mask .e-hotspot--slide-direction {
+  opacity: 1;
+  transform: translate(0) scale(1) !important;
+}
+/* Make hotspot buttons have pointer cursor */
+.e-hotspot__button {
+  cursor: pointer;
+}
+</style>
+
 </head>
 <body class="home wp-singular page-template page-template-elementor_theme page page-id-2 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-kit-6 elementor-page elementor-page-2 e--ua-isTouchDevice e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="desktop">
 
@@ -1701,6 +1719,24 @@ document.addEventListener('DOMContentLoaded', function() {
         d.classList.remove('show-dropdown');
       });
     }
+  });
+});
+</script>
+
+
+<!-- hotspot-hover-fix -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var hotspots = document.querySelectorAll('.e-hotspot');
+  hotspots.forEach(function(hotspot) {
+    hotspot.addEventListener('mouseenter', function() {
+      // Remove active from all others first
+      hotspots.forEach(function(h) { h.classList.remove('e-hotspot--active'); });
+      hotspot.classList.add('e-hotspot--active');
+    });
+    hotspot.addEventListener('mouseleave', function() {
+      hotspot.classList.remove('e-hotspot--active');
+    });
   });
 });
 </script>
